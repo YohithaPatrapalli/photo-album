@@ -1,7 +1,7 @@
 import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import User from "../models/user.js"; // ✅ match exact casing of the file name
+import User from "../models/User.js"; // ✅ match exact casing of the file name
 import verifyToken from "../middleware/verifyToken.js";
 
 const router = express.Router();
