@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 import Dashboard from "./pages/Dashboard";
 import AlbumView from "./pages/AlbumView";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Layout from "./components/Layout";
 import Profile from "./pages/Profile";
