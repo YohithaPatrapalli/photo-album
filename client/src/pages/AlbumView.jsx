@@ -33,11 +33,8 @@ function AlbumView() {
     formData.append("albumId", id);
 
     try {
-      await api.post("/photos", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      await api.post("/photos", formData);
+
       setTitle("");
       setFile(null);
       fetchPhotos();
@@ -168,7 +165,7 @@ function AlbumView() {
             }}
           >
             <img
-              src={`http://localhost:5000${photo.url}`}
+              src={`http://photo-album-msno.onrender.com${photo.url}`}
               alt={photo.title}
               style={{
                 width: "100%",
